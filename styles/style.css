@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    color: #343434;
+}
+body * {box-sizing: border-box}
+img {
+    width: auto;
+    max-width: 100%;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+h2 {
+    font-size: 90px;
+}
+h3 {
+    font-size: 60px;
+    font-weight: 900;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.holder {
+    overflow: hidden;
+}
+.top-section {
+    background: #f8f7fa url("../images/header.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+.top-section header {
+    padding: 45px 0;
+}
+header nav {
+    float: right;
+    padding-top: 17px;
+}
+nav a {
+    color: #262626;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 38px;
+    padding-top: 6px;
+}
+nav a:hover{
+    border-top: 2px solid #ff6033;
+}
+.home {
+  padding: 7% 840px 15% 0;
+}
+.home button {
+    background-color: #ff6033;
+    box-shadow: 0 1px 5px 1px #9a9a9c;
+    border: none;
+    padding: 19px 24px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.top-section a.scroll-to {
+    position: relative;
+    left: 50%;
+}
+.about {
+    background: #00b1b1 url("../images/about.png") no-repeat 0 50%;
+    height: 100vh;
+}
+.float-right {
+    float: right;
+    width: 40%;
+}
+.white-info {
+    padding-top: 15%;
+    color: #ffffff;
+}
+.white-info p {
+    line-height: 27px;
+}
+.services {
+    background-color: #70bfff;
+}
