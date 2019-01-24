@@ -1,13 +1,3 @@
-/*@font-face {
-    font-family: "MyriadProRegular";
-    src: url("../fonts/MyriadProRegular.eot") format("eot"),
-        url("../fonts/MyriadProRegular.woff") format("woff"),
-        url("../fonts/MyriadProRegular.ttf") format("truetype"),
-        url("../fonts/MyriadProRegular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}*/
-
 body {
     margin: 0;
     padding: 0;
@@ -16,17 +6,24 @@ body {
     font-weight: 200;
     color: #343434;
 }
-body * {box-sizing: border-box}
+
+body * {
+    box-sizing: border-box
+}
+
 img {
     width: auto;
     max-width: 100%;
 }
-h1, h2, h3 {
+
+h1, h2, h3, h4, h5 {
     margin: 0;
 }
+
 h2 {
     font-size: 90px;
 }
+
 h3 {
     font-size: 60px;
     font-weight: 900;
@@ -34,7 +31,6 @@ h3 {
 h4 {
     font-size: 40px;
     font-weight: 700;
-    margin: 0;
 }
 a.button {
     transition: 0.5s;
@@ -76,11 +72,11 @@ nav a {
     padding-top: 6px;
     transition: 0.3s;
 }
-nav a:hover{
+nav a:hover {
     border-top: 2px solid #ff6033;
 }
 .home {
-  width: 385px;
+    width: 385px;
     padding: 8% 0;
 }
 .home p {
@@ -190,6 +186,7 @@ nav a:hover{
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 .gallery-container {
     display: flex;
@@ -307,10 +304,14 @@ nav a:hover{
 .blog-3 {
     position: relative;
 }
+.blog-photo a {
+    display: block;
+    transition: 0.3s;
+}
 .blog-1 a:hover,
 .blog-2 a:hover,
 .blog-3 a:hover {
-    box-shadow: 0 2px 10px 3px #6d4d99;
+    box-shadow: 0 2px 10px 6px #6d4d99;
 }
 .blog-photo img {
     box-shadow: 0 2px 8px 1px #6d4d99;
@@ -337,6 +338,7 @@ nav a:hover{
     margin: 0 30px;
 }
 .blog-photo .post-name {
+    text-align: left;
     position: absolute;
     max-width: 320px;
     bottom: 10%;
@@ -349,14 +351,93 @@ nav a:hover{
 .blog-photo .post-name .author {
     font-size: 12px;
 }
-
 .blog .blog-more {
     padding: 20px 0;
 }
 .blog .blog-more a.button {
     background-color: #f72b3b;
+    box-shadow: 0 2px 5px 0 #6d4d99;
     padding: 20px 42px;
-
+}
+.blog .blog-more a.button:hover {
+    box-shadow: 0 1px 10px 2px #9e901d;
+}
+.contact-us {
+    background: url("../images/contact.png") no-repeat 0 0;
+    min-height: 865px;
+    padding-top: 100px;
+}
+.contact-us .flex-layout-2 {
+    align-items: stretch;
+}
+.contact-us .level-1 {
+    width: 370px;
+    margin: 0 auto 30px;
+}
+.contact-us .level-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us .level-2 .contact-form {
+    width: 500px;
+}
+.contact-us .level-2 .contact-info {
+    width: 500px;
+    text-align: left;
+    font-size: 20px;
+}
+.contact-us .contact-info h5 {
+    margin: 18px 0 10px;
+}
+.contact-us .contact-info h5:first-child {
+    margin-top: 0;
+}
+.contact-us input,
+.contact-us textarea {
+    padding: 18px;
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    background-color: rgba(113, 214, 211, 0.6);
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.contact-us textarea {
+    resize: none;
+    min-height: 250px;
+}
+.contact-us input::placeholder,
+.contact-us textarea::placeholder {
+    color: #ffffff;
+    font-weight: 200;
+}
+.contact-us input:focus,
+.contact-us textarea:focus {
+    background-color: #00c4c4;
+    border-left: 5px solid #355b82;
+}
+footer {
+    background-color: #262626;
+    color: #7e7e7e;
+    font-size: 16px;
+    height: 90px;
+    padding-top: 25px;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .logo-small {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+footer span strong {
+    color: #ff2b58;
 }
 
 /*.blog-1 img::after {
